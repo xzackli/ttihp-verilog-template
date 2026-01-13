@@ -33,23 +33,23 @@ pinout:
   ui[7]: "CFG_CLKDIV_1" # clock divider for ADC serial clock [1]
 
   # Outputs
-  uo[0]: "ADC0_SCLK"
-  uo[1]: "ADC0_CS_N"
-  uo[2]: "ADC1_SCLK"
-  uo[3]: "TX_MOSI"
-  uo[4]: "ADC1_CS_N"
-  uo[5]: "TX_SCLK"
-  uo[6]: "ADC2_SCLK"
-  uo[7]: "ADC2_CS_N"
+  uo[0]: "ADC0_SCLK"  # serial clock for ADC0
+  uo[1]: "ADC0_CS_N"  # chip select for ADC0
+  uo[2]: "ADC1_SCLK"  # serial clock for ADC1
+  uo[3]: "TX_MOSI"    # output pin for serial TX
+  uo[4]: "ADC1_CS_N"  # chip select for ADC1
+  uo[5]: "TX_SCLK"    # clock pin for TX
+  uo[6]: "ADC2_SCLK"  # serial clock for ADC2
+  uo[7]: "ADC2_CS_N"  # chip select for ADC2
 
   # Bidirectional pins
-  uio[0]: "ADC0_MISO"
-  uio[1]: "ADC1_MISO"
-  uio[2]: "ADC2_MISO"
-  uio[3]: "ADC3_MISO"
-  uio[4]: "ADC3_SCLK"
-  uio[5]: "ADC3_CS_N"
-  uio[6]: "TX_CS_N"
+  uio[0]: "ADC0_MISO" # input pin for ADC0
+  uio[1]: "ADC1_MISO" # input pin for ADC1
+  uio[2]: "ADC2_MISO" # input pin for ADC2
+  uio[3]: "ADC3_MISO" # input pin for ADC3
+  uio[4]: "ADC3_SCLK" # serial clock for ADC3
+  uio[5]: "ADC3_CS_N" # chip select for ADC3
+  uio[6]: "TX_CS_N"   # chip select for egress
   uio[7]: ""
 
 # Do not change!
