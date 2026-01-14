@@ -20,7 +20,7 @@
   );
 
     // All output pins must be assigned. If not used, assign to 0.
-    assign uio_oe  = 8'b01110000;  // msb to lsb 7:0 of bidi (uio[7] is input for config)
+    assign uio_oe  = 8'b01110000;  // msb to lsb 7:0 of bidi (uio[7:4] active, uio[3:0] inputs)
 
     // List all unused inputs to prevent warnings
     wire _unused = &{ena, uio_in[7:4], 1'b0};
